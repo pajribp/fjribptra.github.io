@@ -6,6 +6,7 @@ import Subheading from "../components/Subheading";
 import Link from "next/link";
 import { Metadata } from "next";
 import { MdOutlineFileDownload } from "react-icons/md";
+import ExperienceCard from "../components/ExperienceCard";
 
 export const metadata: Metadata = {
   title: "About",
@@ -32,24 +33,16 @@ const About = () => {
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <Link href="https://www.edunesia.net" target="_blank" className="dark:bg-slate-800 flex flex-col gap-3 p-5 rounded-lg border border-slate-500">
-              <div className="flex gap-5">
-                <div>
-                  <Image className="w-[50px] h-[50px]" src="/edunesia_logo.jpeg" alt="edunesia" width={400} height={400} />
-                </div>
-                <div>
-                  <h2 className="text-sm font-semibold">PT Edunesia Insan Cerdas</h2>
-                  <p className="text-xs text-slate-600 dark:text-slate-300">Frontend Developer - Internship</p>
-                  <p className="text-xs text-slate-600 dark:text-slate-300">Des 2023 - Jun 2024</p>
-                </div>
-              </div>
-              <div>
-                <p className="text-xs text-slate-600 line-clamp-5 hover:line-clamp-none dark:text-slate-300">
-                  Edunesia is an educational platform that serves as a home for formal and non-formal institutions, catering to students, university students, and the entire Indonesian community, enabling them to utilize digital or
+            <ExperienceCard link="https://www.coredigisolutions.com" title="Coredigi Solutions" occupation="Frontend Developer - Part Time" date="May 2025 - Current" logo="coredigi-solutions.png">
+                Coredigi is a digital micro-agency helping businesses grow their business online.  We deliver solutions for your business grow with your goals in mind. we help you look professional and get more clients online.
+            </ExperienceCard>
+            <ExperienceCard  title="Freelance - India" occupation="Fullstack Developer - Freelance" date="May 2025 - Jun 2025" logo="freelance.png">
+            Building mini app telegram using React.js, Typescript, TailwindCSS, ExpressJs, Implementig realtime event with Websocket. Collaborate with other freelancer with github
+            </ExperienceCard>
+            <ExperienceCard link="https://www.edunesia.net" title="PT Edunesia Insan Cerdas" occupation="Frontend Developer - Internship" date="Des 2023 - Jun 2024" logo="edunesia_logo.jpeg">
+            Edunesia is an educational platform that serves as a home for formal and non-formal institutions, catering to students, university students, and the entire Indonesian community, enabling them to utilize digital or
                   interactive online learning to enhance their knowladge, skills, and educational levels, thereby contributing towards building a smarter and more superior nation
-                </p>
-              </div>
-            </Link>
+            </ExperienceCard>
           </div>
         </div>
       </main>

@@ -6,7 +6,7 @@ import { IsDarkMode } from '../functions/isDarkMode'
 
 const GitHubContributionStats = () => {
   return (
-    <GitHubCalendar username="fjribptra" colorScheme={IsDarkMode() ? 'dark' : 'light'}/>
+    <GitHubCalendar username="pajribp" colorScheme={IsDarkMode() ? 'dark' : 'light'}/>
   )
 }
 
