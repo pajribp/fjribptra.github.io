@@ -5,7 +5,7 @@ export default function TypeWriterEffect() {
     return (
         <div className="">
              <Typewriter
-            words={['Fajri Bagja Putra', 'Software Engineer', 'Fullstack Developer']}
+            words={['Fajri Bagja Putra', 'Website Developer', 'Digital Marketer']}
             loop={true}
             cursor
             // cursorStyle=''

@@ -21,7 +21,7 @@ import Link from "next/link";
 import ProjectCard from "./components/ProjectCard";
 import GitIcon from "./components/icons/GitIcon";
 import Marquee from "react-fast-marquee";
-import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaYoutube, FaTiktok  } from "react-icons/fa";
 import SocialCard from "./components/SocialCard";
 import GitHubCalendar from "react-github-calendar";
 import { GoGitPullRequestDraft } from "react-icons/go";
@@ -33,25 +33,32 @@ export default function Home() {
   return (
     <main className="dark:bg-gray-950 dark:text-white">
       {/* <NavBar/> */}
-      <div className="max-w-3xl mx-auto pt-16 flex flex-col gap-5 p-3">
+      <div className="max-w-4xl mx-auto pt-16 flex flex-col gap-5 p-3">
         <div className="flex justify-start items-center gap-5">
           {/* <Image className="rounded-full w-[100px] h-[100px]" src={`/pajri.jpeg`} alt='' width={400} height={400} /> */}
           {/* <div className="flex flex-col gap-3">
             <h1 className="font-bold text-2xl">Fajri Bagja Putra</h1>
             <h2 className="bg-purple-200 dark:bg-blue-700 w-fit">Fullstack Web Developer</h2>
           </div> */}
-          <h1 className="flex gap-2 text-3xl font-semibold">
-            Hi, I&apos;m <TypeWriterEffect />
+          <h1 className="flex flex-col gap-3 text-3xl font-semibold">
+            <p className="flex gap-2">Hi, I&apos;m <TypeWriterEffect /></p>
+            <div className="flex gap-2 text-sm">
+              <Link className="text-blue-500" href="https://www.linkedin.com/in/fjribptra" target="_blank"><FaLinkedin /></Link>
+              <Link className="text-fuchsia-500" href="https://instagram.com/pajribp" target="_blank"><FaInstagram /></Link>
+              <Link className="text-red-600" href="https://www.youtube.com/@pajribp" target="_blank"><FaYoutube /></Link>
+              <Link className="text-black dark:text-white" href="https://www.tiktok.com/@pajribp" target="_blank"><FaTiktok /></Link>
+              <Link className="text-black dark:text-white" href="https://github.com/pajribp" target="_blank"><FaGithub /></Link>
+            </div>
           </h1>
         </div>
         <hr />
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-2">
           <p className="text-justify">I&apos;m passionate about web development and design. Familiar with modern Front End and Back End framework such as NextJS ( ReactJS ) and Node JS using Javascript or Typescript.</p>
           <p className="text-justify">Fundamental understanding of mobile first design concepts, API implemetation and search engine optimization (SEO).</p>
           <p className="text-justify">I&apos;m always eager to take on new challenges and collaborate on exciting projects . Let&apos;s connect and explore opportunities together.</p>
         </div>
         {/* <SocialIcons /> */}
-        <Subheading title="Discover me"/>
+        {/* <Subheading title="Discover me"/>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <SocialCard title="Linkedin" description="Connect for collaboration or explore my profesional experience" buttonColor="bg-blue-500" iconColor="text-blue-500" linkTo="https://www.linkedin.com/in/fjribptra">
             <FaLinkedin />
@@ -65,9 +72,8 @@ export default function Home() {
           <SocialCard title="Youtube" description="Discover web dev secrets and elevate your coding skills with me" buttonColor="bg-red-600" iconColor="text-red-600" linkTo="https://www.youtube.com/@pajribp">
             <FaYoutube />
           </SocialCard>
-        </div>
+        </div> */}
         <div>
-          {/* <ProjectCard category="Template"  image="/free-web-templates.png" title="50+ Free Editable Web Templates For Business" linkToProject="https://free-web-templates-by-pajri.vercel.app" /> */}
           {/* <Image className="w-full" src="/free-web-templates.png" alt="free web templates" width={1500} height={1500}/>
           </Link> */}
         </div>

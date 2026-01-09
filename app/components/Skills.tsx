@@ -20,6 +20,7 @@ import DockerIcon from "./icons/DockerIcon";
 import MongodbIcon from "./icons/MongodbIcon";
 import Subheading from "./Subheading";
 import LinuxIcon from "./icons/LinuxIcon";
+import { TbSeo } from "react-icons/tb";
 
 const Skills = () => {
   return (
@@ -47,6 +48,9 @@ const Skills = () => {
           <SkillIcon title="NODE.JS">
             <NodejsIcon />
           </SkillIcon>
+          <SkillIcon title="SEARCH ENGINE OPTIMIZATION">
+            <TbSeo />
+          </SkillIcon>
         </Marquee>
         <Marquee direction="right">
           <SkillIcon title="REACT JS">
@@ -58,9 +62,6 @@ const Skills = () => {
           <SkillIcon title="GIT">
             <GitIcon />
           </SkillIcon>
-          {/* <SkillIcon title="PHP">
-            <PhpIcon />
-          </SkillIcon> */}
           {/* <SkillIcon title="LARAVEL">
             <LaravelIcon />
           </SkillIcon> */}

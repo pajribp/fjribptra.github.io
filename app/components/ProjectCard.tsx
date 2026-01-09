@@ -8,7 +8,7 @@ interface ProjectCardProps {
     image: string,
     category?: string,
     title: string,
-    linkToProject: string,
+    linkToProject?: string,
     children?: React.ReactNode
 }
 
@@ -47,10 +47,10 @@ export default function ProjectCard(props: ProjectCardProps) {
 
     return (
         <button onClick={() => onClickCard(props.linkToProject)} className="bg-white w-full">
-          <Image className="w-full h-full" src={props.image} alt='' width={400} height={400} />
-          <div className="bg-white p-2 flex flex-col gap-3">
+          <Image className="w-full aspect-video" src={props.image} alt='' width={400} height={400} />
+          <div className="bg-white p-5 flex flex-col gap-1">
               <p className="text-sm text-left text-slate-500">{props.category}</p>
-              <h2 className="font-bold text-left">{props.title}</h2>
+              <h2 className="font-bold text-left text-black">{props.title}</h2>
               {props.children ? <ProjectStacks content={props.children}/>: null}
           </div>
         </button>
