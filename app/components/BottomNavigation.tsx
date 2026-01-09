@@ -54,7 +54,7 @@ const BottomNavigation = () => {
         <Link className={`text-sm sm:text-base md:text-lg border p-2 sm:p-3 md:p-3.5 lg:p-4 rounded-md sm:rounded-lg border-slate-300 hover:bg-green-200 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center ${isActive("/archive") ? 'bg-green-200' : ''}`} href="/archive" data-tooltip-id="my-tooltip" data-tooltip-content="Archive">
           <IoMdArchive />
         </Link>
-        <Link className={`text-sm sm:text-base md:text-lg border p-2 sm:p-3 md:p-3.5 lg:p-4 rounded-md sm:rounded-lg border-slate-300 hover:bg-blue-200 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center`} href="/file/cv.pdf" data-tooltip-id="my-tooltip" data-tooltip-content="Donwload Resume" target='_blank'>
+        <Link className={`text-sm sm:text-base md:text-lg border p-2 sm:p-3 md:p-3.5 lg:p-4 rounded-md sm:rounded-lg border-slate-300 hover:bg-blue-200 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center`} href="#" data-tooltip-id="my-tooltip" data-tooltip-content="Donwload Resume" target='_blank'>
         <GoDownload />
         </Link>
         {/* <button className="text-2xl border p-4 rounded-lg border-slate-300" data-tooltip-id="my-tooltip" data-tooltip-content="Toggle Theme">

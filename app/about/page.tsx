@@ -27,7 +27,7 @@ const About = () => {
             <Subheading title="Careers" description="My professional work journey">
               <LuLeaf />
             </Subheading>
-            <Link className="px-3 py-1 border border-black dark:border-white rounded-lg flex justify-center items-center gap-1 text-sm" href={"/file/cv.pdf"} target="_blank">
+            <Link className="px-3 py-1 border border-black dark:border-white rounded-lg flex justify-center items-center gap-1 text-sm" href={"#"} target="_blank">
               <MdOutlineFileDownload />
               <p className="text-xs">Download Resume</p>
             </Link>
