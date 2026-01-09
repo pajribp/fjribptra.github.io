@@ -23,6 +23,8 @@ const Projects = () => {
             Discover all my projects i&apos;ve been done
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            
+          <ProjectCard category="Web Game"  image="/archive/openplay_games.png" title="Open Play Games - Web Game" linkToProject="https://openplay-games.vercel.app/"/>
           <ProjectCard category="Archive"  image="/archive/qrgenerator.png" title="Qr Generator" linkToProject="https://pajribp.github.io/qr-generator/"/>
           <ProjectCard category="Archive"  image="/archive/filedownloader.png" title="File Downloader" linkToProject="https://pajribp.github.io/file-downloader/"/>
           <ProjectCard category="Archive"  image="/archive/passwordgenerator.png" title="Random Password Generator" linkToProject="https://pajribp.github.io/password-generator/"/>

@@ -24,7 +24,7 @@ const Projects = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <ProjectCard category="Company Profile"  image="/projects/edunesia_landingpage.png" title="PT Edunesia Insan Cerdas Website Company Profile" linkToProject="https://www.edunesia.net"/>
-          <ProjectCard category="Web Game"  image="/projects/openplay_games.png" title="Open Play Games - Web Game" linkToProject="https://openplay-games.vercel.app/"/>
+          <ProjectCard category="AI Tools"  image="/projects/ringkasinai.png" title="Ringkasin AI" linkToProject="https://ringkasinai.vercel.app/"/>
           </div>
         </div>
       </main>
